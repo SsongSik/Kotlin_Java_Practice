@@ -1,2 +1,2 @@
-# Kotlin_Java_Pratice
+# Kotlin_Java_Practice
 Practice kotlin grammar compared to Kotlin and Java.
