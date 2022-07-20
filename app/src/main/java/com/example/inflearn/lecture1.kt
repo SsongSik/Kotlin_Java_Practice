@@ -1,7 +1,7 @@
 package com.example.inflearn
 
 import android.app.Person
-
+//코틀린에서 변수, null을 다루는 방법
 fun main(){
     // 1. 변수
     var number1 = 10L //바뀔 수 있는 변수

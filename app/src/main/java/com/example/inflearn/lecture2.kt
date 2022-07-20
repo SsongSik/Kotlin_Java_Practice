@@ -1,7 +1,7 @@
 package com.example.inflearn
 
 import android.app.Person
-
+//코틀린에서 Type을 다루는 방법
 fun main(){
     val number1 = 4
 //    val number2 : Long = number1    //Type mismatch
