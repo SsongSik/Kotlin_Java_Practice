@@ -11,12 +11,12 @@ fun main(){
     객체를 비교할 때 비교 연산자를 사용하면 자동으로 compareTo를 호출해준다.
     아래처럼.
      */
-    val money1 = JavaMoney(2_000L)
-    val money2 = JavaMoney(1_000L)
-
-    if(money1 > money2){
-        println("1 > 2")
-    }
+//    val money1 = JavaMoney(2_000L)
+//    val money2 = JavaMoney(1_000L)
+//
+//    if(money1 > money2){
+//        println("1 > 2")
+//    }
 
     /*
     주소하고 값이 모두 같은걸 동일, 값만 같은 경우에는 동등
@@ -26,13 +26,13 @@ fun main(){
     ==를 사용하면 간접적으로 equals를 호출해준다.
      */
 
-    val money3 = JavaMoney(1_000L)
-    val money4 = money3
-    val money5 = JavaMoney(1_000L)
-
-    println(money3 === money5) // false가 출력됨
-    //값은 같지만 주소는 다르기 때문에
-    println(money3 === money4) // 반면 이는 true가 출력됨
+//    val money3 = JavaMoney(1_000L)
+//    val money4 = money3
+//    val money5 = JavaMoney(1_000L)
+//
+//    println(money3 === money5) // false가 출력됨
+//    //값은 같지만 주소는 다르기 때문에
+//    println(money3 === money4) // 반면 이는 true가 출력됨
 
 
     /*

@@ -19,14 +19,14 @@ fun main(){
     val number4 : Long = number3?.toLong() ?: 0L //이런식으로
 
     //string interpolation
-    val person = Person("윤성식", 100)
-    val log = "제 이름은 ${person.name}"
-
-    val str = """
-        ABC
-        EFG
-        ${person.name}
-    """.trimIndent()
+//    val person = Person("윤성식", 100)
+//    val log = "제 이름은 ${person.name}"
+//
+//    val str = """
+//        ABC
+//        EFG
+//        ${person.name}
+//    """.trimIndent()
     //이렇게 하면 엔터가 자동적으로 출력됨
 
     val str1 = "ABCDE"
@@ -43,7 +43,7 @@ fun pritnAgeIfPerson(obj: Any){
      */
     if(obj is Person){
         val person = obj as Person  //obj가 Person이면 Person으로 타입캐스팅이 됨
-        println(person.age)
+//        println(person.age)
     }
 }
 
@@ -56,7 +56,7 @@ fun pritnAgeIfPerson1(obj: Any?){
      */
     if(obj is Person){
         val person = obj as? Person //null이 됨
-        println(person?.age)
+//        println(person?.age)
     }
 }
 /*
