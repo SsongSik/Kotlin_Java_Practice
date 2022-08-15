@@ -1,6 +1,7 @@
 package com.example.inflearn
 
-import java.lang.NumberFormatException
+import kotlin.IllegalArgumentException
+import kotlin.NumberFormatException
 
 fun main(){
     val numbers = listOf(1, 2, 3)
@@ -18,29 +19,32 @@ fun main(){
     }
 }
 
-fun parse(str : String) : Int{
-    try{
-        return str.toInt()
-    }catch (e : NumberFormatException){
-        throw IllegalArgumentException("error")
+class Person3(
+    name : String,
+    age : Int = 1
+){
+    val name = name
+
+
+    val upperName : String
+     get() = this.name.uppercase()
+
+
+    val age = age
+
+    init{
+        if(age <= 0){
+            throw IllegalAccessException("error")
+        }
     }
+
+    val isAudult3 : Boolean
+     get() = this.age >= 20
+
+
 }
 
-fun parse1(str : String) : Int?{
-    return try{
-        str.toInt()
-    }catch (e : NumberFormatException){
-        null
-    }
-}
 
-fun max1(a : Int, b : Int) : Int{
-    if(a>b) {
-        return a
-    }
-    else{
-        return b
-    }
-}
 
-fun max2(a : Int, b : Int) = if(a>b) a else b
+
+
